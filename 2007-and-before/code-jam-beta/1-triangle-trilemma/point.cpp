@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/32014/dashboard#s=p0
+ **************************************************************/
+
 #include "point.h"
 
 bool Point::equals(const Point& other) {

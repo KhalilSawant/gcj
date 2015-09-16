@@ -1,6 +1,7 @@
-/***************************************
+/***************************************************************
  *	Author:	Khalil Sawant
- **************************************/
+ * https://code.google.com/codejam/contest/32014/dashboard#s=p0
+ **************************************************************/
 
 #include <iostream>
 
@@ -11,6 +12,7 @@
 void sort(unsigned long long int* const distance);
 
 int main() {
+
 	unsigned int N;
 	std::cin >> N;
 

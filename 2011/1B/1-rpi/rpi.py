@@ -1,3 +1,10 @@
+################################################################
+#	Author:	Khalil Sawant
+# https://code.google.com/codejam/contest/1150485/dashboard#s=p0
+################################################################
+
+
+
 import sys;
 
 f_ip = open(sys.argv[1],'r');

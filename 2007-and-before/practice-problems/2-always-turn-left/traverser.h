@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/32003/dashboard#s=p1
+ **************************************************************/
+
 enum direction { NORTH, EAST, SOUTH, WEST };
 enum wall { NORTH_WALL, SOUTH_WALL, WEST_WALL, EAST_WALL };
 
@@ -14,4 +19,3 @@ typedef struct {
 void walk(traverser* ptr);
 void left(traverser* ptr);
 void right(traverser* ptr);
-

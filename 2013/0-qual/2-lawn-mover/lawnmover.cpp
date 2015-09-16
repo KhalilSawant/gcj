@@ -1,11 +1,19 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/2270488/dashboard#s=p1
+ **************************************************************/
+
 #include <iostream>
 
 using namespace std;
 
 int main() {
+
     int T;
     cin >> T;
+
     for (int t = 0; t < T; t++) {
+
         cout << "Case #" << (t+1) << ":";
 		int N;
 		cin >> N;

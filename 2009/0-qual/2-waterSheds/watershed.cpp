@@ -1,13 +1,21 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/90101/dashboard#s=p1
+ **************************************************************/
+
 #include <iostream>
 
 char get_basin(int** terrain, char** basin, int H, int W, int j, int k);
 char global_basin_char = 0;
 
 int main() {
+
 	unsigned int T;
 	std::cin >> T;
+
 	int i;
 	for (i = 0; i < T; i++) {
+
 		global_basin_char = 'a';
 		
 		unsigned int H;
@@ -15,12 +23,12 @@ int main() {
 		unsigned int W;
 		std::cin >> W;
 
-		unsigned int j;
-
 		int** terrain;
 		terrain = new int*[H];
 		char** basin;
 		basin =  new char*[H];
+
+		unsigned int j;
 		for (j = 0; j < H; j++) {
 			terrain[j] = new int[W];
 			basin[j] = new char[W];

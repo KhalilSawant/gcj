@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/2334486/dashboard#s=p0
+ **************************************************************/
+
 #include <iostream>
 
 using namespace std;

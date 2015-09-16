@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/32014/dashboard#s=p0
+ **************************************************************/
+
 #ifndef __POINT_H__
 #define __POINT_H__
 

@@ -1,3 +1,9 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/975485/dashboard#s=p2
+ **************************************************************/
+
+
 #include <iostream>
 
 int main() {

@@ -1,3 +1,8 @@
+################################################################
+#	Author:	Khalil Sawant
+# https://code.google.com/codejam/contest/1128486/dashboard#s=p0
+################################################################
+
 import sys;
 import fractions;
 

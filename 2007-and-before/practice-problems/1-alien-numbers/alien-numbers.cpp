@@ -1,6 +1,7 @@
-/***************************************
+/***************************************************************
  *	Author:	Khalil Sawant
- **************************************/
+ * https://code.google.com/codejam/contest/32003/dashboard#s=p0
+ **************************************************************/
 
 #include <iostream>
 #include <string.h>
@@ -11,9 +12,12 @@
 #define ASCII_DIGITS (256)
 
 int main() {
+
 	unsigned int N;
 	std::cin >> N;
+
 	for (unsigned int i = 0;  i < N; i++) {
+
 		char alien_number[MAX_DIGITS_IN_NUMBER];
 		char source_language[MAX_DIGITS_IN_LANGUAGE+1];
 		char target_language[MAX_DIGITS_IN_LANGUAGE+1];

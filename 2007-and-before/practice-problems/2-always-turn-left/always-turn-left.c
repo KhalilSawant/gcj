@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/32003/dashboard#s=p1
+ **************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
@@ -11,8 +16,10 @@ void paint(const char* forward, const char* reverse, int forward_len, int revers
 void print_matrix(char** matrix, int R, int C);
 
 int main() {
+
 	int N;
 	scanf("%d", &N);
+
 	int i;
 	for (i = 0; i < N; i++) {
 		char forward[RUN_LENGTH+1];
@@ -84,12 +91,13 @@ void find_R_C(const char* forward, const char* reverse, int forward_len, int rev
 }
 
 void paint(const char* forward, const char* reverse, int forward_len, int reverse_len, char** matrix, int R, int C, int init_x) {
+
 	traverser me;
 	me.x = init_x;
 	me.y = 0;
 	me.curr = SOUTH;
-	int i;
 
+	int i;
 	for (i = 1; i < forward_len; i++) {
 		switch(forward[i]) {
 			case 'W':
@@ -152,6 +160,7 @@ void paint(const char* forward, const char* reverse, int forward_len, int revers
 }
 
 void print_matrix(char** matrix, int R, int C) {
+
 	int i;
 	for (i = 0; i < R; i++) {
 		int j;

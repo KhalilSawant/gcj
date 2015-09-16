@@ -1,3 +1,9 @@
+################################################################
+#	Author:	Khalil Sawant
+# https://code.google.com/codejam/contest/2974486/dashboard#s=p3
+################################################################
+
+
 import sys;
 
 ip_f = open(sys.argv[1], 'r')

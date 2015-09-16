@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/32003/dashboard#s=p1
+ **************************************************************/
+
 #include "traverser.h"
 
 void walk(traverser* ptr) {

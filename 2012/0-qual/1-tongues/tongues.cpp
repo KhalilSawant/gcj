@@ -1,3 +1,8 @@
+/***************************************************************
+ *	Author:	Khalil Sawant
+ * https://code.google.com/codejam/contest/1460488/dashboard#s=p0
+ **************************************************************/
+
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
