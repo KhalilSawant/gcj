@@ -16,15 +16,18 @@ char check_cross_diagonal(char board[4][4]);
 using namespace std;
 
 int main() {
-    int T;
-    cin >> T;
-    char dummy[6];
-    gets(dummy);
-    for (int t = 0; t < T; t++) {
-	
-        cout << "Case #" << (t+1) << ":";
-        char board[4][4];
-        memset(board, '.', 4*4*sizeof(char));
+
+	int T;
+	cin >> T;
+
+	char dummy[6];
+	gets(dummy);
+
+	for (int t = 0; t < T; t++) {
+
+		cout << "Case #" << (t+1) << ":";
+		char board[4][4];
+		memset(board, '.', 4*4*sizeof(char));
 
 		for (int i = 0; i < 4; i++) {
 			gets(dummy);
@@ -33,22 +36,22 @@ int main() {
 			}
 		}
 		gets(dummy);
-		
-        char h = check_horizontal(board);
-        if ('X' == h) { cout << " X won" << endl; continue; }
-        if ('O' == h) { cout << " O won" << endl; continue; }
 
-        char v = check_vertical(board);
-        if ('X' == v) { cout << " X won" << endl; continue; }
-        if ('O' == v) { cout << " O won" << endl; continue; }
+		char h = check_horizontal(board);
+		if ('X' == h) { cout << " X won" << endl; continue; }
+		if ('O' == h) { cout << " O won" << endl; continue; }
 
-        char d = check_diagonal(board);
-        if ('X' == d) { cout << " X won" << endl; continue; }
-        if ('O' == d) { cout << " O won" << endl; continue; }
+		char v = check_vertical(board);
+		if ('X' == v) { cout << " X won" << endl; continue; }
+		if ('O' == v) { cout << " O won" << endl; continue; }
 
-        char c = check_cross_diagonal(board);
-        if ('X' == c) { cout << " X won" << endl; continue; }
-        if ('O' == c) { cout << " O won" << endl; continue; }
+		char d = check_diagonal(board);
+		if ('X' == d) { cout << " X won" << endl; continue; }
+		if ('O' == d) { cout << " O won" << endl; continue; }
+
+		char c = check_cross_diagonal(board);
+		if ('X' == c) { cout << " X won" << endl; continue; }
+		if ('O' == c) { cout << " O won" << endl; continue; }
 
 		void* dot = memchr(board, '.', 4*4*sizeof(char));
 		if (NULL == dot) 

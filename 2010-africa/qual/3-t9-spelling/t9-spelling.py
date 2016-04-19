@@ -25,13 +25,14 @@ for c in string.ascii_lowercase:
 
 f_ip = open(sys.argv[1], 'r');
 N = int(f_ip.readline());
+
 for i in range(N):
 	line = f_ip.readline();
 	line = line.rstrip();
 	result = "";
 	prev_key = 1;
 	for c in line:
-                if c != ' ':
+		if c != ' ':
 			pos = string.ascii_lowercase.index(c);
 			curr_key = char_to_num_hash[pos];
 		else:

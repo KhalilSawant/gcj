@@ -30,7 +30,7 @@ int main() {
 			distSquared[j] = p[j].distanceSquared(p[(j+1)%NO_OF_POINTS]);
 		}
 
-		if ( 0 == distSquared[0] || 0 == distSquared[1] || 0 == distSquared[2] )  {
+		if ( 0 == distSquared[0] || 0 == distSquared[1] || 0 == distSquared[2] ) {
 			std::cout << "Case #" << (i+1) << ": not a triangle" << std::endl;
 		} else {
 			sort(distSquared);

@@ -16,7 +16,7 @@ int main() {
 	unsigned int N;
 	std::cin >> N;
 
-	for (unsigned int i = 0;  i < N; i++) {
+	for (unsigned int i = 0; i < N; i++) {
 
 		char alien_number[MAX_DIGITS_IN_NUMBER];
 		char source_language[MAX_DIGITS_IN_LANGUAGE+1];

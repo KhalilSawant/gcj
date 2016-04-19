@@ -42,7 +42,7 @@ for case in range(T):
 			destination = orange_seq.pop();
 			displacement = destination-orange_pos;
 			shift = int(math.fabs(displacement));
-#			print "Orange moved from ", orange_pos, "to",  destination, "at time",
+#			print "Orange moved from ", orange_pos, "to", destination, "at time",
 			orange_pos = destination;
 			Time = Time + shift + 1;
 #			print Time;
@@ -67,7 +67,7 @@ for case in range(T):
 			destination = bloo_seq.pop();
 			displacement = destination-bloo_pos;
 			shift = int(math.fabs(displacement));
-#			print "Bloo moved from ", bloo_pos, "to",  destination, "at time",
+#			print "Bloo moved from ", bloo_pos, "to", destination, "at time",
 			bloo_pos = destination;
 			Time = Time + shift + 1;
 #			print Time;

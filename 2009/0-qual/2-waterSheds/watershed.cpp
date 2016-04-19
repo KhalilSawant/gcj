@@ -26,7 +26,7 @@ int main() {
 		int** terrain;
 		terrain = new int*[H];
 		char** basin;
-		basin =  new char*[H];
+		basin = new char*[H];
 
 		unsigned int j;
 		for (j = 0; j < H; j++) {
