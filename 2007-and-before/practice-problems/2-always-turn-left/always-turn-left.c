@@ -51,6 +51,8 @@ int main() {
 		printf("Case #%d:\n", i+1);
 		print_matrix(matrix, R, C);
 	}
+
+	return 0;
 }
 
 void find_R_C(const char* forward, const char* reverse, int forward_len, int reverse_len, int* R, int* C, int* init_x) {

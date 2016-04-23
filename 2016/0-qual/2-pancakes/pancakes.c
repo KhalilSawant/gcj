@@ -29,4 +29,5 @@ int main() {
 
 		printf("Case #%u: %u\n", (i+1), count);
 	}
+	return 0;
 }

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ################################################################
 #	Author:	Khalil Sawant
 # https://code.google.com/codejam/contest/1145485/dashboard#s=p0

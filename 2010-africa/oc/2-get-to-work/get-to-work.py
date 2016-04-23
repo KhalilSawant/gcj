@@ -1,6 +1,7 @@
+#!/usr/bin/python
 ################################################################
 #	Author:	Khalil Sawant
-# https://code.google.com/codejam/contest/438101/dashboard#s=p0
+# https://code.google.com/codejam/contest/438101/dashboard#s=p1
 ################################################################
 
 import sys
