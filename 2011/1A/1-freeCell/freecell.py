@@ -8,11 +8,10 @@ import sys;
 import math;
 import fractions
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for case in range(T):
-	input = map(int, f_ip.readline().split());
+	input = map(int, raw_input().split());
 	
 	gcd = fractions.gcd(input[1],100);
 	if (100/gcd) > input[0]:

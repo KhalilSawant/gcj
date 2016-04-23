@@ -6,11 +6,10 @@
 
 import sys
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 
 for t in range(N):
-	n, A, B, C, D, x0, y0, M = map(int, f_ip.readline().split());
+	n, A, B, C, D, x0, y0, M = map(int, raw_input().split());
 
 	bucket = [];
 	for i in range(3):

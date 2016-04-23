@@ -6,11 +6,10 @@
 
 import sys;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for case in range(T):
-	N = int(f_ip.readline());
+	N = int(raw_input());
 
 	table = [];
 	WP = [];
@@ -18,7 +17,7 @@ for case in range(T):
 	OOWP = [];
 	
 	for team in range(N):
-		record = f_ip.readline().rstrip();
+		record = raw_input().rstrip();
 		table.append(record);
 		wins = record.count('1');
 		loss = record.count('0');

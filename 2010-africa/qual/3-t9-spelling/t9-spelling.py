@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ################################################################
 #	Author:	Khalil Sawant
 # https://code.google.com/codejam/contest/351101/dashboard#s=p2
@@ -23,12 +24,11 @@ for c in string.ascii_lowercase:
 	char_list = num_to_char_hash[char_to_num_hash[pos]];
 	char_list.append(c);
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 
 for i in range(N):
-	line = f_ip.readline();
-	line = line.rstrip();
+	line = raw_input();
+#	line = line.rstrip();
 	result = "";
 	prev_key = 1;
 	for c in line:

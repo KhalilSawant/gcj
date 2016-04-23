@@ -1,13 +1,13 @@
+#!/usr/bin/python
 ################################################################
 #	Author:	Khalil Sawant
-# https://code.google.com/codejam/contest/1128486/dashboard#s=p0
+# https://code.google.com/codejam/contest/1128486/dashboard#s=p2
 ################################################################
 
 import sys;
 import fractions;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 def lcm(a,b):
 	if a == 0 or b == 0:
@@ -16,8 +16,8 @@ def lcm(a,b):
 		return (a*b)/fractions.gcd(a,b);
 
 for case in range(T):
-	N,L,H = map(int, f_ip.readline().split());
-	frequencies = map(int, f_ip.readline().split());
+	N,L,H = map(int, raw_input().split());
+	frequencies = map(int, raw_input().split());
 	impossible = True;
 	frequencies.sort();
 

@@ -4,15 +4,13 @@
 # https://code.google.com/codejam/contest/837485/dashboard#s=p1
 ################################################################
 
-
 import sys;
 
-f_ip = open(sys.argv[1],'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 
 for case in range(N):
-	purse = int(f_ip.readline());
-	price = map(int, f_ip.readline().split());
+	purse = int(raw_input());
+	price = map(int, raw_input().split());
 	
 	bestBuy = -1;
 	bestSell = -1;

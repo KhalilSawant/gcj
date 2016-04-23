@@ -6,20 +6,18 @@
 
 import sys;
 
-ip_f = open(sys.argv[1], 'r')
-
-T = int(ip_f.readline());
+T = int(raw_input());
 
 for i in range(T):
-	ans_1 = int(ip_f.readline());
+	ans_1 = int(raw_input());
 	config_1 = [];
 	for j in range(4):
-		config_1.append(list(map(int,ip_f.readline().split())));
+		config_1.append(list(map(int,raw_input().split())));
 
-	ans_2 = int(ip_f.readline());
+	ans_2 = int(raw_input());
 	config_2 = [];
 	for j in range(4):
-		config_2.append(list(map(int,ip_f.readline().split())));
+		config_2.append(list(map(int,raw_input().split())));
 	
 	matches = 0;
 	lastmatch = 0;

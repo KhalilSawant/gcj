@@ -7,23 +7,22 @@
 import sys;
 import string;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for i in range(T):
-	N, M = map(int, f_ip.readline().split());
+	N, M = map(int, raw_input().split());
 	
 	present = set();
 	
 	for j in range(N):		
-		path = f_ip.readline().rstrip();
+		path = raw_input().rstrip();
 		while len(path):
 			present.add(path);
 			path, sep, rest = path.rpartition('/');
 
 	needed = 0;
 	for j in range(M):
-		path = f_ip.readline().rstrip();
+		path = raw_input().rstrip();
 		while len(path) and path not in present:
 			present.add(path);
 			needed += 1;

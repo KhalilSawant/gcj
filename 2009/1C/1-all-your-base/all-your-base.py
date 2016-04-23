@@ -6,11 +6,10 @@
 
 import sys;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for i in range(T):
-	msg = f_ip.readline().rstrip();
+	msg = raw_input().rstrip();
 	msg_sz = len(msg);
 	chars = set();
 	for j in msg:

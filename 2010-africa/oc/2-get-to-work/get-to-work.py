@@ -6,14 +6,13 @@
 
 import sys
 
-f_ip = open(sys.argv[1], 'r');
-C = int(f_ip.readline());
+C = int(raw_input());
 
 for i in range(C):
 
-	N,T = f_ip.readline().split();
+	N,T = raw_input().split();
 	N = int(N);	T = int(T);
-	E = int(f_ip.readline());
+	E = int(raw_input());
 
 	towns = [];			# One list per town, list of capacties per car
 
@@ -21,7 +20,7 @@ for i in range(C):
 		towns.append([]);
 
 	for j in range(E):
-		H,P = f_ip.readline().split();
+		H,P = raw_input().split();
 		H = int(H);	P = int(P);
 		town_data = towns[H-1];
 		town_data.append(P);

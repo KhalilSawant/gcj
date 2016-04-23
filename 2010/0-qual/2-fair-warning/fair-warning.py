@@ -9,11 +9,10 @@ from collections import deque;
 from operator import __sub__;
 from fractions import gcd;
 
-f_ip = open(sys.argv[1], 'r');
-C = int(f_ip.readline());
+C = int(raw_input());
 
 for i in range(C):
-	t = deque( map( int, f_ip.readline().split() ) );
+	t = deque( map( int, raw_input().split() ) );
 	N = t.popleft(); # deque contains no of items as object[0]
 
 	pivot = t[0];

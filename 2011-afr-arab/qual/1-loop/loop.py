@@ -6,11 +6,10 @@
 
 import sys
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 for i in range(N):
-	f_ip.readline();
-	segments = f_ip.readline().split();
+	raw_input();
+	segments = raw_input().split();
 	blue = [];
 	red = [];
 	for j in segments:

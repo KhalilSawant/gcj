@@ -6,12 +6,11 @@
 
 import sys
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 for i in range(N):
-	C = int(f_ip.readline());
-	I = int(f_ip.readline());
-	line = f_ip.readline();
+	C = int(raw_input());
+	I = int(raw_input());
+	line = raw_input();
 	str_list = line.split();
 	price_list = [];
 	iter = 0;

@@ -7,12 +7,11 @@
 import sys
 from collections import deque;
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 
 for i in range(N):
-	turn = int(f_ip.readline());
-	no_of_trips = f_ip.readline().split();
+	turn = int(raw_input());
+	no_of_trips = raw_input().split();
 	NA = int(no_of_trips[0]);
 	NB = int(no_of_trips[1]);
 
@@ -20,7 +19,7 @@ for i in range(N):
 	trips_b = [];
 
 	for j in range(NA):
-		trip = f_ip.readline().split();
+		trip = raw_input().split();
 		departure = trip[0];
 		arrival = trip[1];
 
@@ -33,7 +32,7 @@ for i in range(N):
 		trips_b.append( (60*hrs+mins+turn,-1) );
 
 	for j in range(NB):
-		trip = f_ip.readline().split();
+		trip = raw_input().split();
 		departure = trip[0];
 		arrival = trip[1];
 

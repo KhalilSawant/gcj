@@ -7,13 +7,11 @@
 import sys;
 import math;
 
-ip_f = open(sys.argv[1], 'r')
-
-T = int(ip_f.readline());
+T = int(raw_input());
 
 for i in range(T):
 
-	(C,F,X) = list(map(float,ip_f.readline().split()))
+	(C,F,X) = list(map(float,raw_input().split()))
 	rate = 2;
 
 	if X > C:

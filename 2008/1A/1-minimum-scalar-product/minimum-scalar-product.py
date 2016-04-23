@@ -7,13 +7,12 @@
 import sys;
 from operator import mul;
 
-f_ip = open(sys.argv[1], 'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for i in range(T):
-	f_ip.readline();
-	vect_str_1 = f_ip.readline().split();
-	vect_str_2 = f_ip.readline().split();
+	raw_input();
+	vect_str_1 = raw_input().split();
+	vect_str_2 = raw_input().split();
 
 	vect_1 = map(int, vect_str_1);
 	vect_2 = map(int, vect_str_2);

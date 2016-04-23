@@ -6,10 +6,10 @@
 
 import sys
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
+
 for i in range(N):
-	line = f_ip.readline();
+	line = raw_input();
 	word_list = line.split();
 	word_list.reverse();
 	print "Case #" + str(i+1) + ":",

@@ -7,11 +7,10 @@
 import sys;
 import math;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 for case in range(T):
-	input = f_ip.readline().split();
+	input = raw_input().split();
 	input.reverse();
 	N = int(input.pop());
 	

@@ -6,12 +6,11 @@
 
 import sys;
 
-f_ip = open(sys.argv[1], 'r');
-N = int(f_ip.readline());
+N = int(raw_input());
 
 for i in range(N):
-	P, K, L = map(int, f_ip.readline().split() );	
-	frequencies = map(int, f_ip.readline().split() );
+	P, K, L = map(int, raw_input().split() );	
+	frequencies = map(int, raw_input().split() );
 	frequencies.sort();
 
 	result = 0;

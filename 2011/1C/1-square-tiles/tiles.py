@@ -6,18 +6,17 @@
 
 import sys;
 
-f_ip = open(sys.argv[1],'r');
-T = int(f_ip.readline());
+T = int(raw_input());
 
 upper_half_tile = str('/\\');
 lower_half_tile = str('\\/');
 
 for case in range(T):
-	R,C = map(int, f_ip.readline().split());
+	R,C = map(int, raw_input().split());
 	
 	orig_map = [];
 	for row in range(R):
-		orig_map.append(f_ip.readline().rstrip());
+		orig_map.append(raw_input().rstrip());
 
 	impossible = False;
 	for row in range(R-1):

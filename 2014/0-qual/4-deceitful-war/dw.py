@@ -6,13 +6,12 @@
 
 import sys;
 
-ip_f = open(sys.argv[1], 'r')
-T = int(ip_f.readline());
+T = int(raw_input());
 
 for i in range(T):
-	N = int(ip_f.readline());
-	naomi = list(map(float,ip_f.readline().split()))
-	ken = list(map(float,ip_f.readline().split()))
+	N = int(raw_input());
+	naomi = list(map(float,raw_input().split()))
+	ken = list(map(float,raw_input().split()))
 	
 	naomi.sort()
 	ken.sort()
